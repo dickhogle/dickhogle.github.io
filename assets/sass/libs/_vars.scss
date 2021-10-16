@@ -1,0 +1,68 @@
+// Misc.
+$misc: (
+z-index-base:		10000
+);
+
+// Duration.
+$duration: (
+nav:				0.5s,
+transition:			0.2s
+);
+
+// Size.
+$size: (
+border-radius:		0.375em,
+element-height:		2.75em,
+element-margin:		2em,
+sidebar-width:		26em,
+sidebar-width-alt:	24em,
+gutter:			3em
+);
+
+// Font.
+$font: (
+//family:		('Open Sans', sans-serif),
+family:			('Patrick Hand', sans-serif),
+//family-heading:	('Roboto Slab', serif),
+family-heading:		('Patrick Hand', sans-serif),
+family-fixed:		('Courier New', monospace),
+weight:			300,
+weight-bold:		500,
+weight-heading:		400,
+weight-heading-alt:	300,
+kerning-heading:	0.075em
+);
+
+
+//// Palette Original
+//$palette: (
+//bg:			#ffffff, //#ffffff
+//bg-alt:			#f5f6f7, //#f5f6f7
+//fg:			#7f888f, //#7f888f
+//fg-bold:		#3d4449, //#3d4449
+//fg-light:		#9fa3a6, //#9fa3a6
+//border:			rgba(210,215,217,0.75), //rgba(210,215,217,0.75)
+//border-bg:		transparentize(#e6ebed, 0.75), //#e6ebed
+//accent:			#f56a6a //#f56a6a
+//);
+
+
+//// #050305 #120a3d #412854 #4cc35b #68da23
+//$fontcolor: saturate( #68da23, 23% );
+//$linkcolor: #68da23;
+//$visitedcolor: desaturate( #68da23, 23% );
+//$shadowcolor: lighten( #120a3d, 90% );
+//$bgcolor: #120a3d;
+//$bloom: 0 0 10px darken( $fontcolor, 20% ), 0 0 15px darken( $fontcolor, 25% ), 0 0 30px lighten( $shadowcolor, 92% );
+//$bloomoff: 0 0 10px darken( $fontcolor, 100% ), 0 0 15px darken( $fontcolor, 1% ), 0 0 30px lighten( $shadowcolor, 42% );
+// Palette.
+$palette: (
+bg:			darken( #120a3d, 3% ), //#120a3d
+bg-alt:			darken( #68da23, 95% ), // menu background
+fg:			saturate( #68da23, 25% ), //#68da23
+fg-bold:		saturate( #68da23, 10% ), //#68da23
+fg-light:		desaturate( #68da23, 10% ), //#68da23
+border:			rgba(210,215,217,0.75), //rgba(210,215,217,0.75)
+border-bg:		transparentize(#412854, 0.75), //#412854
+accent:			lighten( #68da23, 12% ) //#412854 hamburger
+);

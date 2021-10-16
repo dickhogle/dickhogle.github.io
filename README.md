@@ -1,4 +1,3 @@
 # dickhogle.github.io
-personal website
 
-a work in progress
+One man at the dawn of psychodelia.

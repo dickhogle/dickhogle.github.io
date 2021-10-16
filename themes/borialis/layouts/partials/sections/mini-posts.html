@@ -1,0 +1,16 @@
+<section>
+	<header class="major">
+		<h2>Ante interdum</h2>
+	</header>
+	<div class="mini-posts">
+		{{ range . }}
+		<article>
+			<a href="{{ .RelPermalink }}" class="image">{{ partial "featured-image-srcset" (dict "page" . "width" 300 "height" 150 ) }}</a>
+			<p>{{ .Summary | truncate 70 }}</p>
+		</article>
+		{{ end }}
+	</div>
+	<ul class="actions">
+		<li><a href="#" class="button">More</a></li>
+	</ul>
+</section>

@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<!--
+  Hugo Theme by https://github.com/bep
+  Based on Editorial by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (https://creativecommons.org/licenses/by/3.0/)
+-->
+<html>
+  <head>
+    <title>{{ .Title | default .Site.Title }}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ "assets/css/main.css" | relURL }}" />
+	{{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+    <link href="{{ .Site.BaseURL }}/assets/css/font-awesome.min.css" rel="stylesheet">
+    <!--[if lte IE 8]><script src="{{ "assets/js/ie/html5shiv.js" | relURL }}"></script><![endif]-->
+
+
+    <!--<link rel="stylesheet" href="{{ "assets/css/main.css" | relURL }}" />-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="{{ "assets/css/ie9.css" | relURL }}" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="{{ "assets/css/ie8.css"  | relURL }}" /><![endif]-->
+  </head>
+  <body>
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+	<div class="inner">
+	  <!-- Header -->
+	  <header id="header">
+	    <a href="index.html" class="logo">{{ (.Title | default .Site.Title) | markdownify }}</a>
+	    <ul class="icons">
+	      <li><a href="/" class="icon fa-home"><span class="label">Home</span></a></li>
+	      <li><a href="https://m.youtube.com/channel/UCVQ3qDBcH9W3cxFVD0e8mlA/videos" class="icon fa-youtube"><span class="label">Youtube</span></a></li>
+	      <li><a href="https://www.facebook.com/dick.hogle.54" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+	      <!--<li><a href="#" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>-->
+	      <!--<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>-->
+	      <!--<li><a href="#" class="icon fa-medium"><span class="label">Medium</span></a></li>-->
+	    </ul>
+	  </header>
+	  {{block "main" .}}
+	  {{ end }}
+	</div>
+      </div>
+      <!-- Sidebar -->
+      <div id="sidebar">
+	<div class="inner">
+	  <!-- Search -->
+		<!--<section id="search" class="alt">-->
+			<!--<form method="post" action="#">-->
+				<!--<input type="text" name="query" id="query" placeholder="Search" />-->
+			<!--</form>-->
+		<!--</section>-->
+
+	  {{ partial "menu" . }}
+	  <!--{{ partial "sections/mini-posts" (.Site.RegularPages | first 4) }}-->
+	  <!-- Section -->
+	  <section>
+	    <header class="major">
+	      <h2>Contact:</h2>
+	    </header>
+	    <p>We'll be in touch, so you be in touch.</p>
+	    <ul class="contact">
+	      <li class="fa-envelope-o"><a href="mailto:dick.hogle@gmail.com">dick.hogle@gmail.com</a></li>
+	      <li class="fa-phone">1-505-753-6333</li>
+	      <li class="fa-home">58 W Arroyo Alamo<br />
+		La Puebla, NM 87532</li>
+	    </ul>
+	  </section>
+	  <!-- Footer -->
+	  <footer id="footer">
+	    <p class="copyright">(C) 2021 Dick Hogle</a>.</p>
+	  </footer>
+	</div>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script src="{{ "assets/js/jquery.min.js" | relURL }}"></script>
+    <script src="{{ "assets/js/skel.min.js" | relURL }}"></script>
+    <script src="{{ "assets/js/util.js" | relURL }}"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="{{ "assets/js/main.js" | relURL }}"></script>
+
+  </script>
+  </body>
+</html>

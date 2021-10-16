@@ -1,0 +1,10 @@
+{{ define "main" }}
+	{{ $pages :=  where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+	{{ with $pages }}
+		{{ if ge (len .) 1 }}
+			{{ partial "sections/banner" (index . 0) }}
+			{{ partial "sections/diamond" (. | first 4) }}
+			{{ partial "sections/articles" (. | first 4) }}
+		{{ end }}
+	{{ end }}
+{{ end }}

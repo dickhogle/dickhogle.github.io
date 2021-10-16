@@ -1,0 +1,19 @@
+<section id="banner">
+  <div class="content">
+    <header>
+      <h1>{{ with .Params.headline }}{{ . | markdownify }}{{ end }}</h1>
+      <p>{{ with .Params.subhead }}{{ . | markdownify }}{{ end }}</p>
+    </header>
+    <p>{{ .Summary | truncate 100 }}</p>
+    <ul class="actions">
+      <li><a href="{{ .RelPermalink }}" class="button big">Learn More</a></li>
+    </ul>
+  </div>
+  <span class="image object">
+    <!--> original (stuck offscreen)
+      {{ partial "featured-image-srcset" (dict "page" . "width" 640 "height" 512 ) }}
+      </!-->
+          <video controls src="homepage/redslide.webm"  type="video/webm" width="100%" alt="liquid-light slide"  loop="true" autoplay="true" muted="true" poster="homepage/webm-poster.webp"> Sorry, your browser doesn't support embedded videos.
+</video>
+  </span>
+</section>

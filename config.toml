@@ -1,0 +1,9 @@
+baseURL = "https://b00g.com"
+languageCode = "en-us"
+title = "Dick Hogle"
+
+relativeURLs = true
+theme = ["borialis", "snap-gallery"]
+timeout = "10000000"
+
+disableKinds = ["taxonomy", "taxonomyTerm"]

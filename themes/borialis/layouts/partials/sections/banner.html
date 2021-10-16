@@ -1,0 +1,15 @@
+<section id="banner">
+	<div class="content">
+		<header>
+			<h1>{{ with .Params.headline }}{{ . | markdownify }}{{ end }}</h1>
+			<p>{{ with .Params.subhead }}{{ . | markdownify }}{{ end }}</p>
+		</header>
+		<p>{{ .Summary }}</p>
+		<ul class="actions">
+			<li><a href="{{ .RelPermalink }}" class="button big">Learn More</a></li>
+		</ul>
+	</div>
+	<span class="image object">
+		{{ partial "featured-image-srcset" (dict "page" . "width" 640 "height" 512 ) }}
+	</span>
+</section>
