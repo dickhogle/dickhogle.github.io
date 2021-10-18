@@ -1,3 +1,3 @@
 # dickhogle.github.io
 
-One man at the dawn of psychodelia.
+At the dawn of psychodelia, one man.
