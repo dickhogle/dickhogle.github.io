@@ -45,9 +45,19 @@ Design took me and nine other men working 10 weeks.
 Did layouts and illustrations for "Destroyerman" Navy monthly magazine and illustrated and layed out 60th Anniversary glossy magazine.  
 I did many drawings and illustrations of Navy ships.  
 
-{{< figure src="images/biography/34-CentralPark.webp" caption="Central Park NYC" lightbox="none" >}}
+<!--{{< figure src="images/biography/c-Bio_34-CentralPark.webp" caption="Central Park NYC" lightbox="none"  width="10%" >}}-->
 
-<<<
+
+<!--{{< gallery >}}-->
+  <!--{{< figure src="/images/biography/c-Bio_34-CentralPark.webp" caption="Central Park NYC" width="75%" >}}-->
+<!--{{< /gallery >}}-->
+
+{{< gallery >}}
+  {{< snap-dir srcdir="/images/biography" >}}
+{{< /gallery >}}
+---
+  <!--{{< figure src="/images/biography/c-Bio_34-CentralPark.webp" caption="Central Park NYC" lightbox="true"  width="10%" >}}-->
+<!--{{< figure src="/images/narrative/biography/c-Bio_34-CentralPark.webp" caption="A Happening" width="75%" lightbox="none" >}}-->
 
 ### Exhibitions
 
