@@ -3,7 +3,8 @@ languageCode = "en-us"
 title = "Dick Hogle"
 
 relativeURLs = true
-theme = ["borialis", "snap-gallery"]
-timeout = "10000000"
+theme = ["borialis", "hugo-shortcode-gallery"]
+
+timeout = "600"
 
 disableKinds = ["taxonomy", "taxonomyTerm"]

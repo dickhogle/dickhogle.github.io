@@ -7,7 +7,3 @@ weight: 7
 
 And of course there is a sentence or two of introduction to this gallery. Not much.
 
-{{< gallery >}}
-  {{< snap-dir srcdir="/images/gall-artwork" >}}
-{{< /gallery >}}
-
